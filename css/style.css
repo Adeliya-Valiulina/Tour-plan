@@ -340,6 +340,9 @@ template {
   margin-right: auto;
   margin-left: 108px;
 }
+.navbar__menu-button {
+  display: none;
+}
 .navbar-bottom {
   background-color: #0A223D;
 }
@@ -453,6 +456,7 @@ template {
   }
   .menu-button {
     display: flex;
+<<<<<<< HEAD
     width: 16px;
     height: 11px;
     padding: 0;
@@ -462,10 +466,16 @@ template {
     border: none;
     background-color: #fff;
     cursor: pointer;
+=======
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+>>>>>>> f9af2ae401d8e1f98e4ec0b82ed419d8c04f0052
   }
   .menu-button__line {
     width: 16px;
     height: 1px;
+<<<<<<< HEAD
     border-radius: 10px;
     background-color: #333333;
   }
@@ -474,4 +484,8 @@ template {
   .logo {
     width: 100px;
   }
+=======
+    background-color: #333333;
+  }
+>>>>>>> f9af2ae401d8e1f98e4ec0b82ed419d8c04f0052
 }/*# sourceMappingURL=style.css.map */
