@@ -15,7 +15,7 @@
       display: flex
       flex-direction: column
       align-items: center
-      width: 730px
+      max-width: 730px
       margin: 45px auto 0
       border-radius: 8px
       padding: 0 62px 30px
@@ -31,8 +31,8 @@
       &::after
         content: ''
         position: absolute
+        right: 60px
         top: 118px
-        right: 62px
         width: 70px
         height: 47px
         background-image: url(../img/quote-right.svg)
@@ -61,7 +61,7 @@
       flex-direction: column
       align-items: center
       margin-top: -45px
-      margin-bottom: 32px
+      margin-bottom: 30px
     &__avatar
       width: 90px
       height: 90px
@@ -85,6 +85,10 @@
     &__rating
       display: flex
       align-items: center
+    &__star
+      margin-right: 3px
+    &__star:last-child
+    margin-right: 0px
     &__text
       max-width: 537px
       font-style: normal
@@ -93,8 +97,5 @@
       line-height: 160%
       text-align: justify
       margin: auto
-  .rating
-    &__star
-      margin-right: 3px
-    &__star:last-child
-      margin-right: 0px
+  
+    
