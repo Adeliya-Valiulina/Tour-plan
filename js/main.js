@@ -26,3 +26,4 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     onlyInViewport: false,
   },
 });
+
