@@ -485,6 +485,7 @@ template {
   justify-content: space-between;
 }
 .hotel-slider {
+  margin: 0;
   width: 728px;
   height: 450px;
 }
@@ -903,7 +904,8 @@ template {
   line-height: 20px;
   color: #fff;
 }
-.card__button {
+
+button {
   padding: 7px 22px;
   font-family: "Nunito";
   font-style: normal;
@@ -915,6 +917,107 @@ template {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.packages-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.packages__title {
+  margin-top: 0;
+  margin-bottom: 65px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bundle {
+  display: flex;
+  border-radius: 8px;
+  background-color: #0A223D;
+  color: #fff;
+  width: 730px;
+  margin-bottom: 30px;
+}
+.bundle__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.bundle__stars {
+  margin-bottom: 5px;
+}
+.bundle__title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+.bundle__broadcast {
+  margin-top: 0;
+  margin-bottom: 46px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+.bundle__per-room {
+  margin-bottom: 37px;
+}
+.bundle__text {
+  margin-bottom: 11px;
+}
+.bundle__price {
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+}
+.bundle__start {
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+.bundle__pricetag {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.bundle__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 10px 27px;
+}
+
+.first-bundle {
+  display: flex;
+}
+.first-bundle__info {
+  padding: 46px 43px 30px;
+}
+
+.right-bundle {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.right-bundle__info {
+  padding: 30px 30px;
 }
 
 @media (max-width: 1200px) {
