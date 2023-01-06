@@ -943,6 +943,20 @@ button {
   color: #fff;
   width: 730px;
   margin-bottom: 30px;
+  overflow: hidden;
+}
+.bundle__bloc {
+  padding: 43px 46px;
+}
+.bundle__image {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bundle__offer {
+  position: absolute;
+  margin-top: 26px;
+  border-radius: 0 3px 3px 0;
 }
 .bundle__bottom {
   display: flex;
@@ -954,7 +968,7 @@ button {
 }
 .bundle__title {
   margin-top: 0;
-  margin-bottom: 27px;
+  margin-bottom: 23px;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
@@ -971,7 +985,7 @@ button {
   line-height: 160.6%;
 }
 .bundle__per-room {
-  margin-bottom: 37px;
+  margin-bottom: 24px;
 }
 .bundle__text {
   margin-bottom: 11px;
@@ -1001,13 +1015,16 @@ button {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  padding: 10px 27px;
+  padding: 10px 26px;
 }
 
 .first-bundle {
   display: flex;
 }
-.first-bundle__info {
+.first-bundle__offer {
+  padding: 8px 12px;
+}
+.first-bundle__bloc {
   padding: 46px 43px 30px;
 }
 
@@ -1016,8 +1033,14 @@ button {
   flex-direction: column;
   width: 350px;
 }
-.right-bundle__info {
-  padding: 30px 30px;
+.right-bundle__bloc {
+  padding: 30px 30px 25px;
+}
+.right-bundle__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -1036,6 +1059,25 @@ button {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .bundle__text {
+    font-size: 12px;
+  }
+  .bundle__button {
+    min-width: 110px;
+  }
+  .first-bundle {
+    width: 630px;
+  }
+  .first-bundle__image {
+    max-width: 300px;
+  }
+  .right-bundle {
+    width: 300px;
+  }
+  .packages-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media (max-width: 992px) {
@@ -1089,6 +1131,9 @@ button {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .reviews__title {
+    font-size: 24px;
+  }
   .activities-wrapper {
     flex-wrap: wrap;
   }
@@ -1098,6 +1143,23 @@ button {
   .card {
     width: 340px;
     height: 255px;
+  }
+  .packages__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .first-bundle {
+    width: 700px;
+  }
+  .first-bundle__image {
+    max-width: 335px;
+  }
+  .right-bundle {
+    width: 335px;
+  }
+  .right-bundle__image {
+    max-width: 335px;
+    height: 230px;
   }
 }
 @media (max-width: 768px) {
@@ -1198,6 +1260,39 @@ button {
     width: 49%;
     height: 255px;
   }
+  .bundle {
+    width: 100%;
+  }
+  .bundle-info {
+    display: flex;
+  }
+  .bundle__per-room {
+    margin-bottom: 20px;
+  }
+  .bundle__image {
+    max-width: none;
+    width: 100%;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .bundle__title {
+    height: 20px;
+    margin-bottom: 20px;
+  }
+  .bundle__per-room {
+    margin-bottom: 30px;
+  }
+  .bundle__broadcast {
+    display: none;
+  }
+  .first-bundle {
+    display: flex;
+    flex-direction: column;
+  }
+  .first-bundle__bloc {
+    padding: 30px 30px 25px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -1241,6 +1336,24 @@ button {
     margin-bottom: 40px;
   }
   .card {
+    width: 100%;
+  }
+  .packages__title {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .bundle__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .bundle__per-room {
+    margin-bottom: 15px;
+  }
+  .bundle__price {
+    margin-bottom: 15px;
+  }
+  .bundle__button {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
