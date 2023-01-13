@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 		<body>
-		<header class="navbar">
+		<header class="navbar navbar_mobile_fixed">
 			<div class="container">
 				<div class="navbar-top">
 					<a href="#" class="logo">
@@ -20,7 +20,7 @@
 						class="logo__image">
 					</a>
 
-					<form action="#" class="search navbar__search">
+					<form action="#" class="search navbar__search navbar__search_mobile_hidden">
 						<input 
 						type="text" 
 						class="search__input" 
@@ -31,16 +31,14 @@
 						</button>
 					</form>
 
-					<div class="user">
-						<a href="#" class="user navbar__user">
-							<img 
-							src="img/user-avatar.jpg" 
-							alt="Avatar: Nathan" 
-							class="user__avatar">
-							<span class="user__name">Nathan</span>
-						</a>
-					</div>
-					<!-- /.user -->
+					<a href="#" class="user navbar__user navbar__user_mobile_hidden">
+						<img 
+						src="img/user-avatar.jpg" 
+						alt="Avatar: Nathan" 
+						class="user__avatar">
+						<span class="user__name">Nathan</span>
+					</a>
+
 					<button class="menu-button navbar-top__menu-button">
 						<span class="menu-button__line"></span>
 						<span class="menu-button__line"></span>
@@ -53,6 +51,27 @@
 			<div class="navbar-bottom">
 				<div class="container">
 					<ul class="navbar-menu">
+						<li class="navbar-menu__item navbar-menu__item_mobile_visible"> 
+							<a href="#" class="user navbar__user navbar__user_mobile_visible">
+								<img 
+								src="img/user-avatar.jpg" 
+								alt="Avatar: Nathan" 
+								class="user__avatar">
+								<span class="user__name user__name--light">Nathan</span>
+							</a>
+						</li>
+						<li class="navbar-menu__item navbar-menu__item_mobile_visible">
+							<form action="#" class="search navbar__search navbar__search_mobile_visible">
+								<input 
+								type="text" 
+								class="search__input" 
+								placeholder="Search Location"
+								/>
+								<button class="search__button">
+									<img src="img/search.svg" alt="Icon: search">
+								</button>
+							</form>
+						</li>
 						<li class="navbar-menu__item">
 							<a href="#" class="navbar-menu__link">All Deals</a>
 						</li>
@@ -542,7 +561,7 @@
 						</div>
 						<!-- /.card -->
 						<div class="card activities__card">
-							<img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+							<img src="img/activity-3.jpg" alt="Tamarind falls hiking trip-full day" class="card__image">
 							<h3 class="card__title">Tamarind falls hiking trip - full day</h3>
 							<button class="card__button">Book Now</button>
 						</div>
@@ -718,6 +737,5 @@
 			</footer>
 			<script src="js/swiper-bundle.js"></script>
 			<script src="js/main.js"></script>
-
 		</body>
 	</html>
