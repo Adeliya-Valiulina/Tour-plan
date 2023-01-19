@@ -137,7 +137,7 @@
 						</p> 
 					</div>
 					<!-- /.hotel-info__text -->
-					<div class="rating hotel-info__rating">
+					<div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
 						<span class="rating-text">User Rattings</span>
 						<span class="rating-counter">4.5/5</span>
 					</div>
@@ -209,7 +209,7 @@
 								</a>
 							</div>
 							<!-- /.booking__call-center -->
-							<button class="button booking__button">View Other Options</button>
+							<button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
 						</div>
 						<!-- /.booking -->
 						<div class="map">
@@ -270,7 +270,8 @@
 													<strong class="bundle__pricetag">$ 8,500</strong>
 												</div>
 												<!-- /.bundle__price -->
-												<button class="button bundle__button">Book Now</button>
+												<button data-toggle="modal" data-href="#booking-modal" 
+												class="button bundle__button">Book Now</button>
 											</div>
 											<!-- /.bundle-info__bottom -->
 									</div>
@@ -315,7 +316,8 @@
 													<strong class="bundle__pricetag">$ 3,000</strong>
 												</div>
 												<!-- /.bundle__price -->
-												<button class="button bundle__button">Book Now</button>
+												<button data-toggle="modal" data-href="#booking-modal" 
+												class="button bundle__button">Book Now</button>
 											</div>
 											
 											<!-- /.bundle-info__bottom -->
@@ -363,7 +365,8 @@
 													<strong class="bundle__pricetag">$ 9,500</strong>
 												</div>
 												<!-- /.bundle__price -->
-												<button class="button bundle__button">Book Now</button>
+												<button data-toggle="modal" data-href="#booking-modal" 
+												class="button bundle__button">Book Now</button>
 											</div>
 											<!-- /.bundle-info__bottom -->
 									</div>
@@ -409,7 +412,8 @@
 													<strong class="bundle__pricetag">$ 2,500</strong>
 												</div>
 												<!-- /.bundle__price -->
-												<button class="button bundle__button">Book Now</button>
+												<button data-toggle="modal" data-href="#booking-modal" 
+												class="button bundle__button">Book Now</button>
 											</div>
 											<!-- /.bundle-info__bottom -->
 									</div>
@@ -455,7 +459,8 @@
 													<strong class="bundle__pricetag">$ 3,500</strong>
 												</div>
 												<!-- /.bundle__price -->
-												<button class="button bundle__button">Book Now</button>
+												<button data-toggle="modal" data-href="#booking-modal" 
+												class="button bundle__button">Book Now</button>
 											</div>
 											<!-- /.bundle-info__bottom -->
 									</div>
@@ -551,7 +556,7 @@
 						<div class="card activities__card">
 							<img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
 							<h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-							<button class="card__button">Book Now</button>
+							<button class="button card__button">Book Now</button>
 						</div>
 						<!-- /.card -->
 						<div class="card activities__card">
@@ -563,13 +568,13 @@
 						<div class="card activities__card">
 							<img src="img/activity-3.jpg" alt="Tamarind falls hiking trip-full day" class="card__image">
 							<h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-							<button class="card__button">Book Now</button>
+							<button class="button card__button">Book Now</button>
 						</div>
 						<!-- /.card -->
 						<div class="card activities__card">
 							<img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
 							<h3 class="card__title">The blue marine discovery quest</h3>
-							<button class="card__button">Book Now</button>
+							<button class="button card__button">Book Now</button>
 						</div>
 						<!-- /.card -->
 					</div>
@@ -689,7 +694,6 @@
 									Tel (business hours) : 269 1500 <br>
 									Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am - 20:00 pm) <br>
 									Tel (hotline) Sunday: 52-56-61-38 (08:00 am - 14:00 pm) <br>
-
 								</li>
 								<li class="footer__item footer__item--mb-2">
 									<div class="footer__icon-wrapper">
@@ -707,7 +711,7 @@
 							<form action="#" class="footer__form">
 								<input type="text" class="input footer__input" placeholder="Your Full Name*">
 								<input type="text" class="input footer__input" placeholder="Phone Number*">
-								<textarea  cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
+								<textarea  cols="30" rows="10" class="message footer__message" placeholder="Message"></textarea>
 								<button class="button footer__button" type="submit">Send</button>
 								<span class="footer__info">* Required Fields</span>
 							</form>
@@ -735,6 +739,48 @@
 				</div>
 				<!-- /.container -->
 			</footer>
+			<div class="modal" id="booking-modal">
+				<div class="modal__overlay"></div>
+				<!-- /.modal__overlay -->
+				<div class="modal__dialog">
+					<a href="#" class="modal__close">
+						<img src="img/close.svg" alt="Icon: close">
+					</a>
+					<h3 class="modal__title modal__title--mb-3">booking</h3>
+						<form action="#" class="modal__form">
+							<input type="text" class="input modal__input" placeholder="Your Full Name*">
+							<input type="text" class="input modal__input" placeholder="Phone Number*">
+							<input type="text" class="input modal__input" placeholder="Email*">
+							<textarea  cols="30" rows="10" class="message modal__message" placeholder="Message"></textarea>
+							<button class="button modal__button" type="submit">Send</button>
+							<span class="modal__info">* Required Fields</span>
+						</form>
+				</div>
+				<!-- /.modal__dialog -->
+			</div>
+			<div class="modal" id="rating-modal">
+				<div class="modal__overlay"></div>
+				<!-- /.modal__overlay -->
+				<div class="modal__dialog">
+					<a href="#" class="modal__close">
+						<img src="img/close.svg" alt="Icon: close">
+					</a>
+					<h3 class="modal__title modal__title--mb-3">send us a feedback</h3>
+						<form action="#" class="modal__form">
+							<img src="img/modal-star.svg" alt="Icon: star" class="modal__rating">
+							<img src="img/modal-star.svg" alt="Icon: star" class="modal__rating">
+							<img src="img/modal-star.svg" alt="Icon: star" class="modal__rating">
+							<img src="img/modal-star.svg" alt="Icon: star" class="modal__rating">
+							<img src="img/modal-star.svg" alt="Icon: star" class="modal__rating">
+							<textarea  cols="30" rows="10" class="message modal__message" placeholder="Message"></textarea>
+							<button class="button modal__button--w100" type="submit">Send</button>
+						</form>
+				</div>
+				<!-- /.modal__dialog -->
+			</div>
+
+			<!-- /.modal -->
+			<script src="js/jquery-3.6.3.min.js"></script>
 			<script src="js/swiper-bundle.js"></script>
 			<script src="js/main.js"></script>
 		</body>
