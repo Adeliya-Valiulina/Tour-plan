@@ -444,6 +444,7 @@ template {
   right: 0;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -1620,9 +1621,6 @@ template {
   .bundle {
     width: 100%;
   }
-  .bundle-info {
-    display: flex;
-  }
   .bundle__per-room {
     margin-bottom: 20px;
   }
@@ -1649,6 +1647,13 @@ template {
   }
   .first-bundle__bloc {
     padding: 30px 30px 25px;
+  }
+  .modal__dialog {
+    width: 90%;
+    padding: 40px;
+  }
+  .modal__button {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 576px) {
@@ -1778,5 +1783,10 @@ template {
   }
   .navbar__search {
     width: 250px;
+  }
+}
+@media (max-width: 380px) {
+  .modal__button {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

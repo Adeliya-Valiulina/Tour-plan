@@ -251,8 +251,6 @@
     height: 255px
   .bundle
     width: 100%
-    &-info
-      display: flex
     &__per-room
       margin-bottom: 20px
     &__image
@@ -274,6 +272,12 @@
       flex-direction: column
       &__bloc
         padding: 30px 30px 25px
+  .modal
+    &__dialog
+      width: 90%
+      padding: 40px
+    &__button
+      margin-bottom: 10px
 @media (max-width: 576px)
   .container
     max-width: 92%
@@ -380,3 +384,8 @@
   .navbar
     &__search
       width: 250px
+  
+@media  ( max-width: 380px )
+  .modal
+    &__button
+      width: 100%
